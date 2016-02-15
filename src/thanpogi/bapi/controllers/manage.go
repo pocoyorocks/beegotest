@@ -2,12 +2,14 @@ package controllers
 
 import (
 	"fmt"
+	"strconv"
+	"encoding/json"
+	
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/validation"
-	models "thanpogi/bapi/models"
-	"strconv"
-	"encoding/json"
+
+	"thanpogi/common/models"
 )
 
 //Testing

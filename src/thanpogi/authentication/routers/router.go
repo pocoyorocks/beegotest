@@ -8,15 +8,15 @@
 package routers
 
 import (
-	"thanpogi/bapi/controllers"
+	"thanpogi/authentication/controllers"
 	"github.com/astaxie/beego"
 )
 
 func init() {
 	ns := beego.NewNamespace("/v1",
-		beego.NSNamespace("/manage",
+		beego.NSNamespace("/auth",
 			beego.NSInclude(
-				&controllers.ManageController{},
+				&controllers.AuthenticationController{},
 			),
 		),
 	)
